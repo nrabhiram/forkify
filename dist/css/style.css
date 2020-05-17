@@ -388,6 +388,7 @@ body {
 .results__btn--prev,
 .likes__btn--prev {
     float: left;
+    flex-direction: row-reverse;
 }
 
 .results__btn--next,
