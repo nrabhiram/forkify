@@ -1,6 +1,5 @@
-import { elements } from "../views/base";
 
-export default class Liked {
+export default class Likes {
     constructor() {
         this.likes = [];
     }
@@ -12,15 +11,17 @@ export default class Liked {
     }
 
     deleteLike(id) {
-        const index = this.likes.findIndex(el => el.id === id);
+        const index = this.likes.findIndex(el => el.id = id);
         this.likes.splice(index, 1);
     }
 
     isLiked(id) {
-        return this.likes.findIndex(el => el.id = id) !== -1;
+        return this.likes.findIndex(el => el.id === id) !== -1;
     }
 
     getNumLikes() {
         return this.likes.length;
     }
 }
+
+
